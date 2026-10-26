@@ -6,6 +6,8 @@
 
 ![Attachment panel in grid view](.github/screenshots/panel-grid.png)
 
+▶ [Watch the 1-minute demo on YouTube](https://youtu.be/zb1PY-oLNs0)
+
 Requires Frappe **v16** (`version-16`) or later. ERPNext is optional.
 
 ## Features
