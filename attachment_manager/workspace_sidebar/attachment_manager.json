@@ -1,0 +1,37 @@
+{
+ "app": "attachment_manager",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "paperclip",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "settings",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Settings",
+   "link_to": "Attachment Manager Settings",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "tag",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Attachment Types",
+   "link_to": "Attachment Type",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "module": "Attachment Manager",
+ "name": "Attachment Manager",
+ "standard": 1,
+ "title": "Attachment Manager"
+}

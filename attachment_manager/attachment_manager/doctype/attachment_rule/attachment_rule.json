@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "creation": "2026-10-26 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_type",
+  "attachment_type",
+  "required",
+  "required_on",
+  "lock_after_submit",
+  "condition"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Document Type",
+   "options": "DocType",
+   "reqd": 1,
+   "description": "The document this rule applies to."
+  },
+  {
+   "fieldname": "attachment_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Attachment Type",
+   "options": "Attachment Type",
+   "reqd": 1,
+   "description": "The kind of file required or offered on that document."
+  },
+  {
+   "default": "0",
+   "fieldname": "required",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Required",
+   "description": "Block saving/submitting until a file of this type is attached. Unticked: the type is only offered in the checklist."
+  },
+  {
+   "default": "Save",
+   "depends_on": "required",
+   "fieldname": "required_on",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Required On",
+   "options": "Save\nSubmit",
+   "description": "Save: checked on every save after the first. Submit: checked only when submitting."
+  },
+  {
+   "default": "0",
+   "fieldname": "lock_after_submit",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Lock After Submit",
+   "description": "After submit, attachments on this document type can't be deleted, renamed, re-typed or made private/public. New files can still be added. Cancel lifts the lock."
+  },
+  {
+   "description": "Python expression on <code>doc</code>, e.g. <code>doc.grand_total &gt; 1000</code>. Empty means always.",
+   "fieldname": "condition",
+   "fieldtype": "Code",
+   "label": "Condition",
+   "options": "PythonExpression"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-26 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Attachment Manager",
+ "name": "Attachment Rule",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

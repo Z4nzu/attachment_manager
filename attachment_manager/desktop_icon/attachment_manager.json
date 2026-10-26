@@ -1,0 +1,15 @@
+{
+ "app": "attachment_manager",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon_type": "App",
+ "idx": 100,
+ "label": "Attachment Manager",
+ "link": "/desk/attachment-manager-settings",
+ "link_type": "External",
+ "logo_url": "/assets/attachment_manager/images/logo.svg",
+ "name": "Attachment Manager",
+ "roles": [],
+ "standard": 1
+}

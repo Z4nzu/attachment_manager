@@ -1,0 +1,15 @@
+.DS_Store
+*.pyc
+*.egg-info
+*.swp
+tags
+node_modules/
+__pycache__/
+attachment_manager/public/dist
+package-lock.json
+dist/
+attachment_manager/public/node_modules
+attachment_manager/docs/current
+
+# internal notes, audits, plans (local only)
+docs/
